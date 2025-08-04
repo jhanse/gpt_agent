@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Concentration Dashboard</title>
+</head>
+<body>
+    <h1>Concentration Dashboard</h1>
+    <div>
+        <img src="data:image/png;base64,{{ plot_data }}" alt="Concentration Plot"/>
+    </div>
+    <h2>Data</h2>
+    <div>
+        {{ table|safe }}
+    </div>
+    <a href="/">Upload another file</a>
+</body>
+</html>
